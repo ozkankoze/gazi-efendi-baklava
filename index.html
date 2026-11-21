@@ -3,193 +3,395 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gazi Efendi Baklava</title>
+<title>Gazi Efendi Baklava | Alemdağ, Çekmeköy Baklavacı</title>
+<meta name="description" content="Alemdağ Gazi Efendi Baklava: Çekmeköy Alemdağ'da her sabah taze, elde açılan yufka ve Antep fıstığıyla fıstıklı baklava, şöbiyet, havuç dilimi, cevizli baklava ve fıstık sarma. Saray Cd. 70-72 D.">
+<link rel="canonical" href="https://gazi-efendi-baklava.vercel.app/">
+<meta name="theme-color" content="#18352B">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Gazi Efendi Baklava">
+<meta property="og:title" content="Gazi Efendi Baklava | Alemdağ, Çekmeköy Baklavacı">
+<meta property="og:description" content="Kırk kat emek, tek bir lezzet. Alemdağ'da her sabah taze baklava.">
+<meta property="og:url" content="https://gazi-efendi-baklava.vercel.app/">
+<meta property="og:image" content="https://gazi-efendi-baklava.vercel.app/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='23' fill='%2318352B'/%3E%3Cpath d='M24 11l11 13-11 13-11-13z' fill='none' stroke='%23D0AD69' stroke-width='1.6'/%3E%3Cpath d='M24 17l6 7-6 7-6-7z' fill='%23D0AD69'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.avif" type="image/avif">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Bakery",
+ "@id":"https://gazi-efendi-baklava.vercel.app/#isletme",
+ "name":"Alemdağ Gazi Efendi Baklava",
+ "alternateName":"Gazi Efendi Baklava",
+ "description":"Çekmeköy Alemdağ'da her sabah taze, elde açılan yufka ve Antep fıstığıyla baklava yapan baklavacı.",
+ "url":"https://gazi-efendi-baklava.vercel.app/",
+ "image":"https://gazi-efendi-baklava.vercel.app/img/og.jpg",
+ "servesCuisine":["Baklava","Türk tatlıları"],
+ "address":{"@type":"PostalAddress","streetAddress":"Saray Cd. 70-72 D, Alemdağ","addressLocality":"Çekmeköy","addressRegion":"İstanbul","postalCode":"34794","addressCountry":"TR"},
+ "areaServed":[{"@type":"Place","name":"Alemdağ"},{"@type":"Place","name":"Çekmeköy"},{"@type":"Place","name":"İstanbul"}],
+ "hasMap":"https://www.google.com/maps/search/?api=1&query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y",
+ "hasMenu":{"@type":"Menu","name":"Lezzetlerimiz","hasMenuSection":{"@type":"MenuSection","name":"Baklavalar","hasMenuItem":[
+  {"@type":"MenuItem","name":"Fıstıklı baklava","description":"İnce yufka ve bol Antep fıstığıyla klasik baklava."},
+  {"@type":"MenuItem","name":"Şöbiyet","description":"Kaymak ve fıstıkla hazırlanan üçgen dilimler."},
+  {"@type":"MenuItem","name":"Havuç dilimi","description":"Fıstık dolu, çıtır uçlu dilimler."},
+  {"@type":"MenuItem","name":"Cevizli baklava","description":"Bol cevizli, ev usulü baklava."},
+  {"@type":"MenuItem","name":"Fıstık sarma","description":"Kesitinde yoğun fıstık dolgusu olan sarma."}
+ ]}}
+}
+</script>
 <style>
-/* VOICE: sıcak, iştah açıcı, güven veren köklü mahalle baklavacısı
-   IDEA: vitrin camının ardındaki tepsiler; büyük, sinematik ürün fotoğrafları
-   PICTURE: tam genişlik yuvarlak köşeli fotoğraf slaytı, sonra kat kat açılan dilim
-   COLOUR and TYPE: fildişi zemin, Antep yeşili, şerbet altını; Inter Tight + Inter
-   LAYOUT: açılış slaytı, güven şeridi, kategori kartları, anatomi, hikâye, özel günler, ziyaret */
-:root{color-scheme:light;--bg:#FAF6EE;--sand:#F2EADB;--sand2:#E7DCC6;--green:#133A2C;--deep:#0D2A20;--gold:#C29A52;--gold-ink:#8A6420;--ink:#2B2118;--muted:#6B5E4E;--cream:#F5EEDF;--line:#E3D7BF}
+:root{--green:#18352B;--green2:#122a22;--gold:#D0AD69;--gold-ink:#8A6A2E;--cream:#F5F0E6;--cream2:#EDE5D6;--paper:#FBF8F2;--brown:#30251E;--ink:#2A211B;--muted:#6E6357;--line:#E2D8C6;--ease:cubic-bezier(.22,.61,.36,1)}
 *{box-sizing:border-box;min-width:0}
-html{scroll-behavior:smooth;scroll-padding-top:88px}
-body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
-img{display:block;max-width:100%}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.65 Manrope,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+picture{display:block}
 a{color:inherit}
-h1,h2,h3{font-family:'Inter Tight',Inter,sans-serif;margin:0;text-wrap:balance;letter-spacing:-.03em}
-.wrap{max-width:1320px;margin:0 auto;padding:0 max(3vw,16px)}
-.sec{padding:clamp(56px,7vw,104px) 0}
-.title{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 40px;margin-bottom:36px}
-.title h2{font-weight:600;font-size:clamp(32px,4vw,48px);line-height:1.05}
-.title p{margin:6px 0 0;color:var(--muted)}
-.kick{display:block;color:var(--gold-ink);font-weight:600;font-size:14px;margin-bottom:8px}
-.btn{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid transparent;transition:background .2s,color .2s,border-color .2s}
-.btn.gold{background:var(--gold);color:#1E160C}.btn.gold:hover{background:#D4AE68}
-.btn.green{background:var(--green);color:#fff}.btn.green:hover{background:var(--deep)}
-.btn.ghost{border-color:rgba(255,255,255,.7);color:#fff}.btn.ghost:hover{background:#fff;color:var(--ink)}
-.btn.out{border-color:var(--green);color:var(--green)}.btn.out:hover{background:var(--green);color:#fff}
-a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.025em;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.kick{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-ink)}
+.kick::before{content:'';width:22px;height:1px;background:currentColor}
+.h2{font-size:clamp(32px,4.4vw,56px);line-height:1.04}
+.lead{color:var(--muted);font-size:17px;max-width:34em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:999px;font:600 15px/1 Manrope,sans-serif;text-decoration:none;border:1px solid transparent;transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease)}
+.btn svg{transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-gold{background:var(--gold);color:#22180F}.btn-gold:hover{background:#DDBE82}
+.btn-green{background:var(--green);color:var(--cream)}.btn-green:hover{background:var(--green2)}
+.btn-line{border-color:rgba(245,240,230,.55);color:var(--cream)}.btn-line:hover{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.btn-dark{border-color:var(--ink);color:var(--ink)}.btn-dark:hover{background:var(--ink);color:var(--cream)}
+.tlink{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
-/* başlık çubuğu */
-.top{position:sticky;top:0;z-index:20;background:rgba(250,246,238,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+/* ——— navbar ——— */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .45s var(--ease),box-shadow .45s var(--ease),color .45s var(--ease);color:var(--cream)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px;transition:height .45s var(--ease)}
+.nav.solid{background:rgba(251,248,242,.94);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);box-shadow:0 1px 0 var(--line);color:var(--ink)}
+.nav.solid .wrap{height:70px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo svg{width:46px;height:46px;flex:none}
-.logo b{display:block;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.02em;line-height:1.05;color:var(--green)}
-.logo small{display:block;font-size:12px;color:var(--gold-ink);font-weight:500}
-.nav{display:flex;gap:30px;font-size:15px;font-weight:500}
-.nav a{text-decoration:none;padding:6px 0;border-bottom:1.5px solid transparent}
-.nav a:hover{border-color:var(--gold)}
-@media(max-width:900px){.nav{display:none}}
-@media(max-width:420px){.top .btn span{display:none}.top .btn{padding:0 14px}}
+.logo svg{width:42px;height:42px;flex:none}
+.logo b{display:block;font-weight:800;font-size:19px;letter-spacing:-.02em;line-height:1.1}
+.logo small{display:block;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+.menu{display:flex;align-items:center;gap:34px;font-size:14.5px;font-weight:600}
+.menu a{text-decoration:none;position:relative;padding:6px 0}
+.menu a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.menu a:hover::after{transform:scaleX(1)}
+.nav .btn{min-height:44px;padding:0 20px;font-size:14px}
+.nav:not(.solid) .btn{background:transparent;border-color:rgba(245,240,230,.6);color:var(--cream)}
+.nav:not(.solid) .btn:hover{background:var(--cream);color:var(--ink)}
+.burger{display:none;width:44px;height:44px;border:0;background:none;color:inherit;cursor:pointer;padding:0;align-items:center;justify-content:center}
+.burger i{display:block;width:22px;height:1.5px;background:currentColor;position:relative;transition:transform .3s var(--ease)}
+.burger i::before,.burger i::after{content:'';position:absolute;left:0;width:22px;height:1.5px;background:currentColor;transition:transform .3s var(--ease),top .3s var(--ease)}
+.burger i::before{top:-7px}.burger i::after{top:7px}
+.nav.open .burger i{background:transparent}
+.nav.open .burger i::before{top:0;transform:rotate(45deg)}.nav.open .burger i::after{top:0;transform:rotate(-45deg)}
+.drawer{display:none}
+@media(max-width:960px){
+ .menu,.nav .wrap>.btn{display:none}
+ .burger{display:flex}
+ .nav.open{background:var(--paper);color:var(--ink)}
+ .drawer{display:block;position:fixed;inset:70px 0 auto;background:var(--paper);border-top:1px solid var(--line);padding:8px clamp(18px,4vw,48px) 28px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s;box-shadow:0 24px 40px -24px rgba(48,37,30,.35)}
+ .nav.open .drawer{opacity:1;transform:none;visibility:visible}
+ .drawer a{display:block;padding:15px 0;border-bottom:1px solid var(--line);font-size:18px;font-weight:600;text-decoration:none;color:var(--ink)}
+ .drawer .btn{display:flex;padding:0 28px;margin-top:20px;width:100%;border-bottom:0;color:var(--cream);justify-content:center}
+ .nav.open .wrap{height:70px}
+}
 
-/* açılış slaytı */
-.hero{position:relative;margin-top:16px;border-radius:28px;overflow:hidden;height:clamp(480px,72vh,680px);background:#2A1A0E;color:#fff}
-.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease}
-.slide.on{opacity:1}
-.slide img{width:100%;height:100%;object-fit:cover;object-position:70% 50%}
-.slide::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,14,6,.82) 0%,rgba(25,14,6,.55) 38%,rgba(25,14,6,0) 68%)}
-.slide .txt{position:absolute;z-index:1;left:clamp(24px,6vw,84px);top:50%;transform:translateY(-50%);max-width:min(560px,86%);display:flex;flex-direction:column;gap:18px}
-.slide .lab{color:#E2C58A;font-weight:600;font-size:15px}
-.slide h1,.slide h2{font-weight:600;font-size:clamp(40px,5.6vw,76px);line-height:1;letter-spacing:-.04em}
-.slide p{margin:0;font-size:18px;color:#EADFCB;max-width:30em}
-.slide .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
-.dots{position:absolute;z-index:2;left:clamp(24px,6vw,84px);bottom:28px;display:flex;gap:8px}
-.dots button{width:44px;height:44px;border:0;background:none;padding:0;cursor:pointer;display:flex;align-items:center}
-.dots button i{display:block;width:100%;height:3px;border-radius:3px;background:rgba(255,255,255,.35)}
-.dots button[aria-current=true] i{background:#E2C58A}
-@media(max-width:640px){.slide::after{background:linear-gradient(0deg,rgba(25,14,6,.88) 10%,rgba(25,14,6,.35) 60%,rgba(25,14,6,.1))}.slide .txt{top:auto;bottom:84px;transform:none}.slide img{object-position:72% 50%}.slide p{font-size:16px}}
+/* ——— hero ——— */
+.hero{position:relative;height:100vh;height:100svh;min-height:600px;max-height:980px;overflow:hidden;color:var(--cream);background:#2b1d12}
+.hero picture,.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+.hero img{transform-origin:65% 50%;animation:settle 1.6s var(--ease) both}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,21,13,.78) 0%,rgba(32,21,13,.5) 34%,rgba(32,21,13,.08) 64%,rgba(32,21,13,0) 100%),linear-gradient(0deg,rgba(32,21,13,.45) 0%,rgba(32,21,13,0) 30%)}
+.hero .wrap{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:60px}
+.hero-in{max-width:620px;display:flex;flex-direction:column;gap:24px}
+.hero .kick{color:var(--gold)}
+.hero h1{font-size:clamp(44px,6.6vw,92px);line-height:.98;letter-spacing:-.04em;font-weight:700}
+.hero h1 span{display:block;color:var(--gold)}
+.hero p{font-size:clamp(16px,1.4vw,19px);color:#EDE3D2;max-width:30em}
+.hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:6px}
+.hero .tlink{color:var(--cream)}
+.hero .loc{position:absolute;z-index:1;right:clamp(18px,4vw,48px);bottom:32px;font-size:13px;color:#E6DAC6;display:flex;gap:10px;align-items:center}
+.hero .loc::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.a1,.a2,.a3,.a4{animation:rise .9s var(--ease) both}
+.a1{animation-name:fade;animation-delay:.1s}.a2{animation-delay:.25s}.a3{animation-delay:.5s}.a4{animation-delay:.68s}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes settle{from{transform:scale(1.07)}to{transform:scale(1)}}
+@media(max-width:700px){
+ .hero{min-height:620px}
+ .hero::after{background:linear-gradient(0deg,rgba(32,21,13,.9) 0%,rgba(32,21,13,.62) 42%,rgba(32,21,13,.12) 75%)}
+ .hero .wrap{justify-content:flex-end;padding-bottom:56px}
+ .hero img{object-position:70% 50%}
+ .hero .loc{display:none}
+ .hero-in{gap:18px}
+}
 
-/* güven şeridi */
-.trust{margin-top:20px;background:var(--sand);border-radius:22px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
-.trust div{display:flex;align-items:center;gap:14px;padding:26px clamp(16px,2.4vw,32px);position:relative}
-.trust div+div::before{content:'';position:absolute;left:0;top:24%;bottom:24%;width:1px;background:var(--sand2)}
-.trust svg{width:38px;height:38px;flex:none;color:var(--gold-ink)}
-.trust b{display:block;font-weight:600;font-size:15.5px;line-height:1.3}
-.trust span{font-size:14px;color:var(--muted);line-height:1.35}
-@media(max-width:900px){.trust{grid-template-columns:repeat(2,minmax(0,1fr))}.trust div:nth-child(3)::before{display:none}}
-@media(max-width:480px){.trust{grid-template-columns:1fr}.trust div::before{display:none}.trust div{padding:16px 20px}}
+/* ——— güven şeridi ——— */
+.trust{background:var(--cream);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.trust div{display:flex;align-items:center;gap:14px;padding:28px 22px;position:relative}
+.trust div:first-child{padding-left:0}
+.trust div+div::before{content:'';position:absolute;left:0;top:30%;bottom:30%;width:1px;background:var(--line)}
+.trust svg{width:30px;height:30px;flex:none;color:var(--gold-ink)}
+.trust b{display:block;font-size:15px;font-weight:700}
+.trust span{display:block;font-size:13.5px;color:var(--muted);line-height:1.4}
+@media(max-width:900px){.trust .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.trust div{padding:20px 16px}.trust div:nth-child(odd){padding-left:0}.trust div:nth-child(3)::before{display:none}}
+@media(max-width:440px){.trust .wrap{grid-template-columns:1fr}.trust div{padding:14px 0}.trust div::before{display:none}}
 
-/* kategori kartları */
-.cats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
-.cat{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:3/4;text-decoration:none;color:#fff;background:var(--sand2)}
-.cat img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
-.cat:hover img{transform:scale(1.06)}
-.cat::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,12,4,.78) 0%,rgba(20,12,4,0) 52%)}
-.cat div{position:absolute;z-index:1;left:20px;right:20px;bottom:18px}
-.cat h3{font-weight:600;font-size:clamp(20px,1.8vw,25px);line-height:1.1}
-.cat p{margin:4px 0 0;font-size:14px;color:#EADFCB;line-height:1.35}
-@media(max-width:1000px){.cats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin-right:calc(-1 * max(3vw,16px))}.cat{flex:0 0 min(62vw,260px);scroll-snap-align:start}}
+/* ——— bölüm ortak ——— */
+.sec{padding:clamp(72px,10vw,140px) 0}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:20px 64px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.head .kick{margin-bottom:16px}
+@media(max-width:800px){.head{grid-template-columns:1fr}}
 
-/* anatomi */
-.anat{position:relative;height:300vh;background:var(--deep);color:var(--cream);--gap:min(7vh,60px)}
-.stick{position:sticky;top:0;height:100vh;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:center;gap:3vw;padding:96px max(4vw,16px) 40px;max-width:1440px;margin:0 auto;background:radial-gradient(ellipse 36% 46% at 64% 55%,rgba(194,154,82,.16),transparent 100%)}
-.intro{display:flex;flex-direction:column;gap:18px}
-.intro .kick{color:#E2C58A}
-.intro h2{font-weight:600;font-size:clamp(44px,6vw,92px);line-height:.95;letter-spacing:-.045em}
-.intro h2 span{color:#E2C58A}
-.intro p{margin:0;color:#CFC5B0;max-width:28em;font-size:17px}
-.hint{font-size:14px;color:#CFC5B0;opacity:calc(1 - var(--e,0)*3)}
+/* ——— lezzetler ——— */
+.gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(14px,1.6vw,24px)}
+.item{display:flex;flex-direction:column;gap:16px}
+.item .ph{overflow:hidden;border-radius:4px;aspect-ratio:4/5;background:var(--cream2)}
+.item img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.item:hover img{transform:scale(1.04)}
+.item h3{font-size:19px;font-weight:700;letter-spacing:-.015em;display:flex;justify-content:space-between;gap:10px}
+.item h3 small{font-size:12px;color:var(--gold-ink);font-weight:700;letter-spacing:.1em;padding-top:5px}
+.item p{font-size:14.5px;color:var(--muted);line-height:1.5;margin-top:-8px}
+.gnote{margin-top:36px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;color:var(--muted);font-size:15px}
+@media(max-width:1100px){.gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin:0 calc(-1*clamp(18px,4vw,48px));padding:0 clamp(18px,4vw,48px) 6px;scroll-padding-inline:clamp(18px,4vw,48px);scrollbar-width:none}.gallery::-webkit-scrollbar{display:none}.item{flex:0 0 min(68vw,280px);scroll-snap-align:start}}
+
+/* ——— ustalık ——— */
+.craft{background:var(--cream)}
+.craft-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(40px,6vw,96px)}
+.craft-media{position:sticky;top:96px;height:calc(100vh - 136px);max-height:780px;border-radius:4px;overflow:hidden;background:var(--cream2)}
+.craft-media picture{position:absolute;inset:0;opacity:0;transform:scale(1.04);transition:opacity .9s var(--ease),transform 1.4s var(--ease)}
+.craft-media picture.on{opacity:1;transform:none}
+.craft-media img{width:100%;height:100%;object-fit:cover}
+.craft-media .cap{position:absolute;left:20px;bottom:18px;z-index:1;color:var(--cream);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-shadow:0 1px 12px rgba(0,0,0,.4)}
+.steps{display:flex;flex-direction:column}
+.step{min-height:72vh;display:flex;flex-direction:column;justify-content:center;gap:16px;opacity:.28;transform:translateY(10px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.step.on{opacity:1;transform:none}
+.step .no{font-size:14px;font-weight:700;color:var(--gold-ink);letter-spacing:.14em;display:flex;align-items:center;gap:12px}
+.step .no::after{content:'';width:48px;height:1px;background:var(--gold)}
+.step h3{font-size:clamp(28px,2.8vw,40px);line-height:1.08}
+.step p{color:var(--muted);font-size:17px;max-width:28em}
+.step picture{display:none}
+.craft-top{padding-bottom:12px}
+.craft-top .kick{margin-bottom:16px}
+@media(max-width:900px){
+ .craft-grid{grid-template-columns:1fr}
+ .craft-media{display:none}
+ .step{min-height:0;opacity:1;transform:none;padding:28px 0;border-top:1px solid var(--line)}
+ .step picture{display:block;border-radius:4px;overflow:hidden;aspect-ratio:4/3;margin-bottom:6px}
+ .step picture img{width:100%;height:100%;object-fit:cover}
+}
+
+/* ——— kırk kat (mevcut sahne korunuyor) ——— */
+.anat{position:relative;height:300vh;background:var(--green);color:var(--cream);--gap:min(7vh,60px)}
+.stick{position:sticky;top:0;height:100vh;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:center;gap:3vw;padding:90px clamp(18px,4vw,48px) 40px;max-width:1380px;margin:0 auto;background:radial-gradient(ellipse 36% 46% at 64% 55%,rgba(208,173,105,.14),transparent 100%)}
+.intro{display:flex;flex-direction:column;gap:20px}
+.intro .kick{color:var(--gold)}
+.intro h2{font-size:clamp(44px,6vw,88px);line-height:.96;letter-spacing:-.045em}
+.intro h2 span{color:var(--gold)}
+.intro p{color:#D5CCBB;max-width:27em;font-size:17px}
+.hint{font-size:13.5px;color:#C9C0AE;opacity:calc(1 - var(--e,0)*3)}
 .stage{position:relative;width:min(38vw,500px,60vh);aspect-ratio:763/734}
+.stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:none}
+.stage.has-video video{display:block}
+.stage.has-video .layer{display:none}
 .layer{position:absolute;left:0;right:0;top:calc(var(--t)*1%);height:calc(var(--h)*1%);transform:translateY(calc(var(--e,0)*var(--o)*var(--gap)));will-change:transform}
 .cut{position:absolute;inset:0;overflow:hidden}
 .cut img{position:absolute;left:0;width:100%;height:calc(10000%/var(--h));top:calc(-100% * var(--t) / var(--h));max-width:none}
 .tag{position:absolute;left:92%;top:50%;transform:translateY(-50%);display:flex;align-items:center;opacity:clamp(0,calc((var(--e,0) - var(--th)) * 6),1);pointer-events:none}
-.tag i{width:10px;height:10px;border-radius:50%;background:#E2C58A;flex:none}
-.tag b{width:clamp(20px,3.5vw,56px);height:1px;background:#E2C58A;opacity:.7;flex:none}
+.tag i{width:9px;height:9px;border-radius:50%;background:var(--gold);flex:none}
+.tag b{width:clamp(20px,3.5vw,56px);height:1px;background:var(--gold);opacity:.7;flex:none}
 .tag span{padding-left:12px;width:clamp(120px,13vw,190px)}
-.tag strong{display:block;font-family:'Inter Tight',sans-serif;font-weight:600;font-size:clamp(15px,1.4vw,20px);line-height:1.15}
-.tag em{font-style:normal;font-size:clamp(12px,1vw,14px);color:#CFC5B0;line-height:1.35;display:block}
-@media(max-width:820px){.anat{--gap:3.2vh}.stick{grid-template-columns:1fr;align-content:center;gap:26px;padding-top:40px}.intro p{font-size:15.5px}.stage{width:min(52vw,44vh)}.tag span{width:34vw}.tag b{width:20px}}
+.tag strong{display:block;font-weight:700;font-size:clamp(15px,1.35vw,19px);line-height:1.2}
+.tag em{font-style:normal;font-size:clamp(12px,1vw,14px);color:#C9C0AE;line-height:1.35;display:block}
+@media(max-width:820px){.anat{--gap:3.2vh}.stick{grid-template-columns:1fr;align-content:center;gap:26px;padding-top:80px}.intro p{font-size:15.5px}.stage{width:min(52vw,42vh)}.tag span{width:34vw}.tag b{width:20px}}
 
-/* hikâye */
-.story{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
-.story img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:24px}
-.story h2{font-weight:600;font-size:clamp(32px,4vw,48px);line-height:1.05;margin-bottom:16px}
-.story p{margin:0 0 14px;color:var(--muted)}
-.feats{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
-.feats li{display:flex;gap:14px;align-items:flex-start;background:var(--sand);border-radius:16px;padding:16px 18px}
-.feats svg{width:26px;height:26px;flex:none;color:var(--gold-ink);margin-top:2px}
-.feats b{display:block;font-weight:600}
-.feats span{font-size:15px;color:var(--muted)}
-@media(max-width:860px){.story{grid-template-columns:1fr}}
+/* ——— özel günler ——— */
+.occ{background:var(--brown);color:var(--cream)}
+.occ-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:center}
+.occ-media{position:relative;padding-bottom:12%}
+.occ-media .big{border-radius:4px;overflow:hidden;aspect-ratio:4/3}
+.occ-media .big img{width:100%;height:115%;object-fit:cover}
+.occ-media .small{position:absolute;right:-6%;bottom:0;width:38%;border-radius:4px;overflow:hidden;aspect-ratio:4/5;outline:8px solid var(--brown)}
+.occ-media .small img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.occ-media .small:hover img{transform:scale(1.04)}
+.occ .kick{color:var(--gold);margin-bottom:18px}
+.occ .lead{color:#D8CCBA;margin-top:18px}
+.olist{list-style:none;margin:30px 0 34px;padding:0;border-top:1px solid rgba(208,173,105,.35)}
+.olist li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:17px 0;border-bottom:1px solid rgba(208,173,105,.35);font-size:18px;font-weight:600;transition:color .35s var(--ease),padding .35s var(--ease)}
+.olist li span{font-size:13.5px;font-weight:500;color:#BFB3A0}
+.olist li:hover{color:var(--gold);padding-left:6px}
+@media(max-width:900px){.occ-grid{grid-template-columns:1fr}.occ-media .small{right:0}}
 
-/* özel günler bannerı */
-.banner{position:relative;border-radius:28px;overflow:hidden;min-height:440px;display:flex;align-items:center;color:#fff;background:#2A1A0E}
-.banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%}
-.banner::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,14,6,.85) 0%,rgba(25,14,6,.5) 42%,rgba(25,14,6,0) 72%)}
-.banner .txt{position:relative;z-index:1;padding:48px clamp(24px,6vw,84px);max-width:620px;display:flex;flex-direction:column;gap:16px}
-.banner h2{font-weight:600;font-size:clamp(34px,4.4vw,56px);line-height:1.02}
-.banner p{margin:0;color:#EADFCB}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips span{border:1px solid rgba(226,197,138,.55);color:#F1E2C2;border-radius:999px;padding:6px 14px;font-size:14px}
-@media(max-width:640px){.banner::after{background:linear-gradient(0deg,rgba(25,14,6,.9) 30%,rgba(25,14,6,.3))}.banner{align-items:flex-end;min-height:520px}}
+/* ——— marka hikâyesi ——— */
+.story-img{border-radius:4px;overflow:hidden;aspect-ratio:16/7;margin-bottom:clamp(40px,5vw,72px)}
+.story-img img{width:100%;height:118%;object-fit:cover;object-position:60% 50%}
+.story-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px)}
+.story-grid .kick{margin-bottom:16px}
+.story-text p{color:var(--muted);font-size:17px;margin-bottom:16px;max-width:34em}
+.values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:30px}
+.values div{border-top:1px solid var(--gold);padding-top:16px}
+.values b{display:block;font-size:16px}
+.values span{font-size:14px;color:var(--muted);line-height:1.5;display:block;margin-top:4px}
+@media(max-width:860px){.story-grid{grid-template-columns:1fr}.story-img{aspect-ratio:4/3}}
+@media(max-width:520px){.values{grid-template-columns:1fr}}
 
-/* ziyaret */
-.visit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
-.card{background:var(--sand);border-radius:24px;padding:clamp(24px,3.5vw,44px);display:flex;flex-direction:column;gap:18px}
-.card h2{font-weight:600;font-size:clamp(30px,3.6vw,44px);line-height:1.05}
-.rows{display:grid;gap:0}
-.rows div{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-top:1px solid var(--sand2)}
-.rows small{color:var(--muted);font-size:14px}
-.rows strong{font-weight:600;text-align:right}
-.photo{border-radius:24px;overflow:hidden;min-height:360px;position:relative}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-@media(max-width:860px){.visit{grid-template-columns:1fr}}
+/* ——— iletişim ——— */
+.contact{background:var(--cream)}
+.c-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:stretch}
+.c-info{display:flex;flex-direction:column;gap:26px;justify-content:center}
+.c-rows{border-top:1px solid var(--line)}
+.c-rows div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.c-rows small{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink);padding-top:3px}
+.c-rows strong{font-weight:600;font-size:17px}
+.c-rows a{text-decoration:none}.c-rows a:hover{color:var(--gold-ink)}
+.c-btns{display:flex;flex-wrap:wrap;gap:12px}
+.c-photo{border-radius:4px;overflow:hidden;min-height:420px;position:relative}
+.c-photo picture,.c-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media(max-width:860px){.c-grid{grid-template-columns:1fr}.c-photo{min-height:300px;order:-1}.c-rows div{grid-template-columns:1fr;gap:4px}}
 
-footer{background:var(--deep);color:#CFC5B0;margin-top:clamp(56px,7vw,104px);padding:48px 0 32px;font-size:15px}
-footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
-footer h3{font-size:15px;color:#E2C58A;letter-spacing:0;margin-bottom:10px}
-footer a{text-decoration:none;display:block;padding:3px 0}footer a:hover{color:#fff}
-footer .logo b{color:#fff}footer .logo small{color:#E2C58A}
-footer .copy{border-top:1px solid #23463A;margin-top:36px;padding-top:20px;font-size:13.5px}
-@media(max-width:700px){footer .cols{grid-template-columns:1fr}}
+/* ——— alt bilgi ——— */
+footer{background:var(--green);color:#CFC6B4;padding:64px 0 34px;font-size:15px}
+.f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}
+footer h3{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+footer a{text-decoration:none;display:block;padding:4px 0}footer a:hover{color:var(--cream)}
+footer .logo{color:var(--cream);margin-bottom:18px}
+.f-bot{margin-top:48px;padding-top:22px;border-top:1px solid rgba(208,173,105,.22);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:13.5px}
+@media(max-width:760px){.f-grid{grid-template-columns:1fr}}
 
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.slide{transition:none}.cat img{transition:none}.anat{height:auto}.stick{position:relative;height:auto;min-height:100vh}}
+/* ——— mobil yol tarifi düğmesi ——— */
+.fab{position:fixed;z-index:40;left:50%;bottom:16px;transform:translate(-50%,120%);opacity:0;transition:transform .45s var(--ease),opacity .45s var(--ease);display:none;align-items:center;gap:8px;min-height:46px;padding:0 20px;border-radius:999px;background:var(--green);color:var(--cream);font-weight:600;font-size:14.5px;text-decoration:none;box-shadow:0 10px 30px -8px rgba(24,53,43,.55)}
+.fab.show{transform:translate(-50%,0);opacity:1}
+@media(max-width:860px){.fab{display:inline-flex}}
+
+/* ——— reveal ——— */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.08s}.js .rv.d2{transition-delay:.16s}.js .rv.d3{transition-delay:.24s}.js .rv.d4{transition-delay:.32s}
+
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .js .rv{opacity:1;transform:none}
+ .anat{height:auto}.stick{position:relative;height:auto;min-height:100vh}
+ .step{opacity:1;transform:none}
+}
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
- <symbol id="emb" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22.5" fill="#133A2C"/><circle cx="24" cy="24" r="19" fill="none" stroke="#C29A52" stroke-width="1"/><path d="M24 10l12 14-12 14-12-14z" fill="none" stroke="#C29A52" stroke-width="1.4"/><path d="M24 16l6.8 8-6.8 8-6.8-8z" fill="#C29A52"/><circle cx="24" cy="24" r="2.2" fill="#8DB04A"/></symbol>
+ <symbol id="emb" viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#18352B"/><circle cx="24" cy="24" r="19.5" fill="none" stroke="#D0AD69" stroke-width=".8"/><path d="M24 10.5l11.5 13.5L24 37.5 12.5 24z" fill="none" stroke="#D0AD69" stroke-width="1.3"/><path d="M24 16.5l6.4 7.5-6.4 7.5-6.4-7.5z" fill="#D0AD69"/></symbol>
+ <symbol id="arr" viewBox="0 0 20 20"><path d="M4 10h12M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
 </svg>
 
-<header class="top">
+<header class="nav" id="nav">
  <div class="wrap">
-  <a class="logo" href="#ust" aria-label="Gazi Efendi Baklava ana sayfa"><svg aria-hidden="true"><use href="#emb"/></svg><span><b>Gazi Efendi</b><small>Baklava · Alemdağ</small></span></a>
-  <nav class="nav" aria-label="Ana menü">
-   <a href="#lezzetler">Lezzetlerimiz</a><a href="#kat">Kırk kat</a><a href="#hikaye">Hikâyemiz</a><a href="#ozel-gunler">Özel günler</a><a href="#iletisim">İletişim</a>
+  <a class="logo" href="#ust" aria-label="Gazi Efendi Baklava, ana sayfa"><svg aria-hidden="true"><use href="#emb"/></svg><span><b>Gazi Efendi</b><small>Baklava · Alemdağ</small></span></a>
+  <nav class="menu" aria-label="Ana menü">
+   <a href="#lezzetler">Lezzetlerimiz</a><a href="#ustalik">Ustalık</a><a href="#kirk-kat">Kırk Kat</a><a href="#ozel-gunler">Özel Günler</a><a href="#hikaye">Hikâyemiz</a>
   </nav>
-  <a class="btn green" href="#iletisim"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>Bizi arayın</span></a>
+  <a class="btn btn-green" href="#iletisim">Bizi ziyaret edin</a>
+  <button class="burger" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="drawer"><i></i></button>
+ </div>
+ <div class="drawer" id="drawer">
+  <a href="#lezzetler">Lezzetlerimiz</a><a href="#ustalik">Ustalık</a><a href="#kirk-kat">Kırk Kat</a><a href="#ozel-gunler">Özel Günler</a><a href="#hikaye">Hikâyemiz</a><a href="#iletisim">İletişim</a>
+  <a class="btn btn-green" href="https://www.google.com/maps/search/?api=1&amp;query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y">Yol tarifi al</a>
  </div>
 </header>
 
 <main id="ust">
-<div class="wrap">
- <section class="hero" aria-roledescription="slayt gösterisi" aria-label="Öne çıkanlar">
-  <div class="slide on"><img src="h1.webp" alt="Gümüş tepside fıstıklı baklava dilimleri"><div class="txt"><span class="lab">Alemdağ Gazi Efendi Baklava</span><h1>Alemdağ'ın fıstıklı baklavası</h1><p>Kırk kat ince yufka, avuç avuç Antep fıstığı ve kıvamında şerbet. Her sabah taze.</p><div class="cta"><a class="btn gold" href="#lezzetler">Lezzetlerimizi keşfedin</a><a class="btn ghost" href="#iletisim">Yol tarifi</a></div></div></div>
-  <div class="slide"><img src="h2.webp" alt="Usta bakır tepsideki baklavayı kesiyor" loading="lazy"><div class="txt"><span class="lab">Usta elinden</span><h2>Her sabah, yeni bir tepsi</h2><p>Yufkası elde açılır, tepsisi gözümüzün önünde kesilir. Bekletilmiş baklava vitrine girmez.</p><div class="cta"><a class="btn gold" href="#hikaye">Hikâyemiz</a></div></div></div>
-  <div class="slide"><img src="h3.webp" alt="Çay, baklava tabağı ve kurdeleli baklava kutusu" loading="lazy"><div class="txt"><span class="lab">Özel günleriniz için</span><h2>Sofranızın en tatlı misafiri</h2><p>Bayram, söz, nişan ve kurumsal ikramlar için tepsi ve kutularınızı özenle hazırlıyoruz.</p><div class="cta"><a class="btn gold" href="#ozel-gunler">Özel günler</a></div></div></div>
-  <div class="dots" role="group" aria-label="Slayt seç"></div>
- </section>
 
- <section class="trust" aria-label="Neden Gazi Efendi">
-  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><p style="margin:0"><b>Her sabah taze</b><span>Günlük üretim, bekletme yok</span></p></div>
-  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 14h18M5 10h14M7 18h10"/><path d="M2 14l2-4M22 14l-2-4"/></svg><p style="margin:0"><b>Elde açılan yufka</b><span>Oklavayla, kat kat</span></p></div>
-  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3c4 2 6 6 6 10a6 6 0 0 1-12 0c0-4 2-8 6-10z"/><path d="M12 9v9"/></svg><p style="margin:0"><b>Bol Antep fıstığı</b><span>Yeşili canlı, tazesi seçilmiş</span></p></div>
-  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><p style="margin:0"><b>Alemdağ, Çekmeköy</b><span>Saray Caddesi'nde</span></p></div>
- </section>
+<section class="hero" aria-label="Gazi Efendi Baklava">
+ <picture>
+  <source srcset="img/hero.avif" type="image/avif">
+  <img src="img/hero.webp" width="1344" height="752" alt="Gümüş tepside, fıstık dolgusu görünen fıstıklı baklava dilimleri" fetchpriority="high">
+ </picture>
+ <div class="wrap">
+  <div class="hero-in">
+   <span class="kick a1">Alemdağ Gazi Efendi Baklava</span>
+   <h1 class="a2">Kırk Kat Emek. <span>Tek Bir Lezzet.</span></h1>
+   <p class="a3">İncecik açılan yufkalar, özenle seçilen Antep fıstığı ve ustalığın yıllara yayılan lezzeti.</p>
+   <div class="cta a4">
+    <a class="btn btn-gold" href="#lezzetler">Lezzetlerimizi Keşfedin <svg width="18" height="18" aria-hidden="true"><use href="#arr"/></svg></a>
+    <a class="tlink" href="#iletisim">Alemdağ'da bizi bulun</a>
+   </div>
+  </div>
+ </div>
+ <span class="loc a4">Saray Cd. 70-72 D · Çekmeköy, İstanbul</span>
+</section>
 
- <section class="sec" id="lezzetler">
-  <div class="title"><div><span class="kick">Vitrinimizden</span><h2>Lezzetlerimiz</h2></div><p>Her gün taze, tükenene kadar. Fiyat ve stok için bize uğrayın ya da arayın.</p></div>
-  <div class="cats" id="cats"></div>
- </section>
-</div>
+<section class="trust" aria-label="Neden Gazi Efendi">
+ <div class="wrap">
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><p><b>Her sabah taze</b><span>Günlük üretim</span></p></div>
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 14h18M5 10h14M7 18h10"/></svg><p><b>Elde açılan yufka</b><span>Oklavayla, kat kat</span></p></div>
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 3c4 2 6 6 6 10a6 6 0 0 1-12 0c0-4 2-8 6-10z"/><path d="M12 9v9"/></svg><p><b>Antep fıstığı</b><span>Özenle seçilmiş</span></p></div>
+  <div><svg aria-hidden="true"><use href="#pin"/></svg><p><b>Alemdağ, Çekmeköy</b><span>Saray Caddesi'nde</span></p></div>
+ </div>
+</section>
 
-<section class="anat" id="kat">
+<section class="sec" id="lezzetler">
+ <div class="wrap">
+  <div class="head">
+   <div><span class="kick rv">Lezzetlerimiz</span><h2 class="h2 rv d1">Ustalığın İmzası</h2></div>
+   <p class="lead rv d2">Alemdağ'daki vitrinimizde her gün taze çıkan baklavalarımız. Her biri aynı sabırla, aynı ustalıkla hazırlanır.</p>
+  </div>
+  <div class="gallery">
+   <article class="item rv"><div class="ph"><picture><source srcset="img/fistikli.avif" type="image/avif"><img src="img/fistikli.webp" width="720" height="900" alt="Bakır tepside dilimlenmiş fıstıklı baklava" loading="lazy" decoding="async"></picture></div><h3>Fıstıklı Baklava <small>01</small></h3><p>Klasiğimiz. İnce yufka, bol Antep fıstığı.</p></article>
+   <article class="item rv d1"><div class="ph"><picture><source srcset="img/sobiyet.avif" type="image/avif"><img src="img/sobiyet.webp" width="720" height="900" alt="Tabakta kaymaklı fıstıklı şöbiyet" loading="lazy" decoding="async"></picture></div><h3>Şöbiyet <small>02</small></h3><p>Kaymak ve fıstıkla, yumuşacık üçgenler.</p></article>
+   <article class="item rv d2"><div class="ph"><picture><source srcset="img/havuc.avif" type="image/avif"><img src="img/havuc.webp" width="720" height="900" alt="Tabakta havuç dilimi baklava" loading="lazy" decoding="async"></picture></div><h3>Havuç Dilimi <small>03</small></h3><p>Fıstık dolu, çıtır uçlu dilimler.</p></article>
+   <article class="item rv d3"><div class="ph"><picture><source srcset="img/cevizli.avif" type="image/avif"><img src="img/cevizli.webp" width="720" height="900" alt="Tabakta cevizli baklava" loading="lazy" decoding="async"></picture></div><h3>Cevizli Baklava <small>04</small></h3><p>Bol cevizli, ev usulü lezzet.</p></article>
+   <article class="item rv d4"><div class="ph"><picture><source srcset="img/sarma.avif" type="image/avif"><img src="img/sarma.webp" width="720" height="900" alt="Kesitinde fıstık görünen fıstık sarma" loading="lazy" decoding="async"></picture></div><h3>Fıstık Sarma <small>05</small></h3><p>Kesitinde yoğun bir fıstık girdabı.</p></article>
+  </div>
+  <div class="gnote rv"><span>Ürünlerimiz günlük hazırlanır, tükenene kadar satılır.</span><a class="tlink" href="#iletisim">Alemdağ'daki mağazamıza gelin</a></div>
+ </div>
+</section>
+
+<section class="sec craft" id="ustalik">
+ <div class="wrap">
+  <div class="craft-grid">
+   <div class="craft-media" aria-hidden="true">
+    <picture class="on" data-i="0"><source srcset="img/yufka.avif" type="image/avif"><img src="img/yufka.webp" width="800" height="1000" alt="" loading="lazy" decoding="async"></picture>
+    <picture data-i="1"><source srcset="img/fistik.avif" type="image/avif"><img src="img/fistik.webp" width="800" height="1000" alt="" loading="lazy" decoding="async"></picture>
+    <picture data-i="2"><source srcset="img/serbet.avif" type="image/avif"><img src="img/serbet.webp" width="800" height="1000" alt="" loading="lazy" decoding="async"></picture>
+    <span class="cap" id="cap">01 / 03</span>
+   </div>
+   <div>
+    <div class="craft-top"><span class="kick rv">Ustalık</span><h2 class="h2 rv d1" style="margin-top:16px">İyi Baklava Aceleye Gelmez.</h2></div>
+    <div class="steps">
+     <article class="step on" data-i="0">
+      <picture><source srcset="img/yufka.avif" type="image/avif"><img src="img/yufka.webp" width="800" height="1000" alt="Usta oklavayla ince yufka açıyor" loading="lazy" decoding="async"></picture>
+      <span class="no">01</span><h3>Hamurun Sabırla Açılması</h3>
+      <p>Hamur her sabah yoğrulur, dinlendirilir ve oklavayla ışık geçecek incelikte açılır. Yufkalar tek tek, tereyağıyla serilir.</p>
+     </article>
+     <article class="step" data-i="1">
+      <picture><source srcset="img/fistik.avif" type="image/avif"><img src="img/fistik.webp" width="800" height="1000" alt="Pirinç kasede çekilmiş Antep fıstığı" loading="lazy" decoding="async"></picture>
+      <span class="no">02</span><h3>Fıstığın Katlarla Buluşması</h3>
+      <p>Yeşili canlı, tazesi seçilmiş Antep fıstığı katların arasına cömertçe yayılır. Lezzetin kalbi burada kurulur.</p>
+     </article>
+     <article class="step" data-i="2">
+      <picture><source srcset="img/serbet.avif" type="image/avif"><img src="img/serbet.webp" width="800" height="1000" alt="Fırından çıkan baklavaya şerbet dökülüyor" loading="lazy" decoding="async"></picture>
+      <span class="no">03</span><h3>Fırından Çıkan Taze Lezzet</h3>
+      <p>Altın rengini alan tepsiye ılık şerbet dökülür. Çatalda çıtır, ağızda yumuşak; vitrine aynı gün taze çıkar.</p>
+     </article>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- KIRK KAT bölümü
+     Higgsfield videosu hazır olduğunda: aşağıdaki data-video özelliğine dosya yolunu yazın
+     (örn. data-video="video/kirk-kat.mp4"). Video, sayfa kaydırıldıkça kare kare ilerler.
+     data-poster videonun yüklenirken göstereceği görseldir. Video yoksa mevcut katman animasyonu çalışır. -->
+<section class="anat" id="kirk-kat" data-video="" data-poster="img/dilim.webp">
  <div class="stick">
   <div class="intro">
    <span class="kick">Bir dilimin anatomisi</span>
@@ -198,105 +400,144 @@ footer .copy{border-top:1px solid #23463A;margin-top:36px;padding-top:20px;font-
    <span class="hint">↓ Kaydırın</span>
   </div>
   <div class="stage" role="img" aria-label="Katmanlarına ayrılan fıstıklı baklava dilimi: fıstık tacı, üst katlar, fıstık yatağı, alt katlar ve şerbet">
-   <div class="layer" style="--t:0;--h:27;--o:-1.5;--th:.15"><div class="cut"><img src="dilim.webp" alt=""></div><div class="tag"><i></i><b></b><span><strong>Fıstık tacı</strong><em>Üstüne serpilen taze Antep fıstığı</em></span></div></div>
-   <div class="layer" style="--t:27;--h:29.5;--o:-.5;--th:.35"><div class="cut"><img src="dilim.webp" alt=""></div><div class="tag"><i></i><b></b><span><strong>Üst katlar</strong><em>Oklavayla, ışık geçecek incelikte</em></span></div></div>
-   <div class="layer" style="--t:56.5;--h:20.5;--o:.5;--th:.55"><div class="cut"><img src="dilim.webp" alt=""></div><div class="tag"><i></i><b></b><span><strong>Fıstık yatağı</strong><em>Cimrilik yok, avuç avuç</em></span></div></div>
-   <div class="layer" style="--t:77;--h:23;--o:1.5;--th:.75"><div class="cut"><img src="dilim.webp" alt=""></div><div class="tag"><i></i><b></b><span><strong>Alt katlar ve şerbet</strong><em>Tereyağıyla serilir, ılık şerbetle biter</em></span></div></div>
+   <div class="layer" style="--t:0;--h:27;--o:-1.5;--th:.15"><div class="cut"><img src="img/dilim.webp" width="763" height="734" alt=""></div><div class="tag"><i></i><b></b><span><strong>Fıstık tacı</strong><em>Üstüne serpilen taze Antep fıstığı</em></span></div></div>
+   <div class="layer" style="--t:27;--h:29.5;--o:-.5;--th:.35"><div class="cut"><img src="img/dilim.webp" width="763" height="734" alt=""></div><div class="tag"><i></i><b></b><span><strong>Üst katlar</strong><em>Oklavayla, ışık geçecek incelikte</em></span></div></div>
+   <div class="layer" style="--t:56.5;--h:20.5;--o:.5;--th:.55"><div class="cut"><img src="img/dilim.webp" width="763" height="734" alt=""></div><div class="tag"><i></i><b></b><span><strong>Fıstık yatağı</strong><em>Cimrilik yok, avuç avuç</em></span></div></div>
+   <div class="layer" style="--t:77;--h:23;--o:1.5;--th:.75"><div class="cut"><img src="img/dilim.webp" width="763" height="734" alt=""></div><div class="tag"><i></i><b></b><span><strong>Alt katlar ve şerbet</strong><em>Tereyağıyla serilir, ılık şerbetle biter</em></span></div></div>
   </div>
  </div>
 </section>
 
-<div class="wrap">
- <section class="sec" id="hikaye">
-  <div class="story">
-   <img src="yufka.webp" alt="Usta oklavayla ince yufka açıyor" loading="lazy" style="aspect-ratio:4/3;object-position:50% 40%">
-   <div>
-    <span class="kick">Hikâyemiz</span>
-    <h2>Alemdağ'ın köşesinde, eskisi gibi baklava</h2>
-    <p>Gazi Efendi, Alemdağ'da Saray Caddesi üzerinde mahallenin baklavacısı. Bayramına, nişanına, misafirine yıllardır eşlik ediyoruz.</p>
-    <p>Tarifimiz basit, emeğimiz büyük: iyi malzeme, usta eli ve acele etmemek.</p>
-    <ul class="feats">
-     <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 14h18M5 10h14M7 18h10"/></svg><div><b>Elde açılan yufka</b><span>Hamur her sabah yoğrulur, kâğıt inceliğinde açılır.</span></div></li>
-     <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3c4 2 6 6 6 10a6 6 0 0 1-12 0c0-4 2-8 6-10z"/></svg><div><b>Antep fıstığı ve tereyağı</b><span>Katların arasına bol bol, kalitesinden ödün vermeden.</span></div></li>
-     <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3v4M12 3v4M16 3v4"/><path d="M4 10h16l-1.5 9a2 2 0 0 1-2 1.7h-9a2 2 0 0 1-2-1.7z"/></svg><div><b>Kıvamında şerbet</b><span>Sıcak tepsiye ılık şerbet: çatalda çıtır, ağızda yumuşak.</span></div></li>
-    </ul>
-   </div>
+<section class="sec occ" id="ozel-gunler">
+ <div class="wrap occ-grid">
+  <div class="occ-media rv">
+   <div class="big"><picture><source srcset="img/ikram-genis.avif" type="image/avif"><img data-px src="img/ikram-genis.webp" width="1344" height="752" alt="Çay, baklava tabağı ve altın kurdeleli baklava kutusu" loading="lazy" decoding="async"></picture></div>
+   <div class="small"><picture><source srcset="img/kutu.avif" type="image/avif"><img src="img/kutu.webp" width="720" height="900" alt="Kurdeleyle bağlanmış baklava kutusu ve çay" loading="lazy" decoding="async"></picture></div>
   </div>
- </section>
-
- <section class="banner" id="ozel-gunler">
-  <img src="h3.webp" alt="Çay, baklava ve kurdeleli hediye kutusu" loading="lazy">
-  <div class="txt">
-   <span class="kick" style="color:#E2C58A;margin:0">Özel günler</span>
-   <h2>Sevincinizin tatlısı bizden</h2>
-   <p>Tepsi ve kurdeleli kutu siparişlerinizi önceden hazırlıyoruz. Büyük siparişler için bir gün önceden haber vermeniz yeterli.</p>
-   <div class="chips"><span>Bayramlar</span><span>Söz ve nişan</span><span>Misafir sofraları</span><span>Kurumsal ikram</span></div>
-   <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:6px"><a class="btn gold" href="#iletisim">Sipariş için arayın</a><a class="btn ghost" href="#iletisim">WhatsApp'tan yazın</a></div>
+  <div>
+   <span class="kick rv">Özel Günler</span>
+   <h2 class="h2 rv d1">Güzel Anlar, Güzel Hatırlanır.</h2>
+   <p class="lead rv d2">Bayram ziyaretinden nişan sofrasına, sevinçlerinize Gazi Efendi lezzeti eşlik etsin. Tepsi ve kutu siparişleriniz için bize ulaşın; ihtiyacınıza göre birlikte hazırlayalım.</p>
+   <ul class="olist rv d3">
+    <li>Bayram ziyaretleri <span>Tepsi ve kutu</span></li>
+    <li>Söz ve nişan <span>Sofra ve ikram</span></li>
+    <li>Misafir sofraları <span>Günlük taze</span></li>
+    <li>Kurumsal ikram <span>Toplu sipariş</span></li>
+   </ul>
+   <a class="btn btn-gold rv d4" href="#iletisim">Bizimle İletişime Geçin <svg width="18" height="18" aria-hidden="true"><use href="#arr"/></svg></a>
   </div>
- </section>
+ </div>
+</section>
 
- <section class="sec" id="iletisim">
-  <div class="visit">
-   <div class="card">
-    <span class="kick" style="margin:0">Bizi ziyaret edin</span>
-    <h2>Çayınız hazır, baklavanız taze</h2>
-    <div class="rows">
-     <div><small>Adres</small><strong>Saray Cd. 70-72 D, Alemdağ<br>34794 Çekmeköy / İstanbul</strong></div>
-     <div><small>Çalışma saatleri</small><strong>Eklenecek</strong></div>
-     <div><small>Telefon</small><strong>Eklenecek</strong></div>
-     <div><small>WhatsApp</small><strong>Eklenecek</strong></div>
+<section class="sec" id="hikaye">
+ <div class="wrap">
+  <div class="story-img rv"><picture><source srcset="img/usta.avif" type="image/avif"><img data-px src="img/usta.webp" width="1344" height="752" alt="Usta bakır tepsideki taze baklavayı kesiyor" loading="lazy" decoding="async"></picture></div>
+  <div class="story-grid">
+   <div><span class="kick rv">Hikâyemiz</span><h2 class="h2 rv d1" style="margin-top:16px">Alemdağ'ın köşesinde, eskisi gibi baklava.</h2></div>
+   <div class="story-text">
+    <p class="rv">Gazi Efendi, Çekmeköy Alemdağ'da Saray Caddesi üzerinde bir baklavacı. Bizim için iyi baklava; iyi malzeme, usta eli ve acele etmemek demek.</p>
+    <p class="rv d1">Her sabah tezgâhı yeniden kurar, yufkayı yeniden açarız. Vitrine ne çıkıyorsa o gün yapılmıştır.</p>
+    <div class="values rv d2">
+     <div><b>Usta eli</b><span>Yufka oklavayla, elde açılır.</span></div>
+     <div><b>Taze malzeme</b><span>Antep fıstığı ve tereyağı.</span></div>
+     <div><b>Günlük üretim</b><span>Bekletmeden, her gün taze.</span></div>
     </div>
-    <div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn green" href="https://www.google.com/maps/search/?api=1&amp;query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y">Yol tarifi al</a><a class="btn out" href="#lezzetler">Lezzetlerimiz</a></div>
    </div>
-   <div class="photo"><img src="h2.webp" alt="Usta bakır tepsideki baklavayı kesiyor" loading="lazy" style="object-position:65% 50%"></div>
   </div>
- </section>
-</div>
+ </div>
+</section>
+
+<section class="sec contact" id="iletisim">
+ <div class="wrap c-grid">
+  <div class="c-info">
+   <span class="kick rv">Bizi Ziyaret Edin</span>
+   <h2 class="h2 rv d1">Alemdağ'da, Saray Caddesi'nde.</h2>
+   <p class="lead rv d2">Çekmeköy Alemdağ'da baklava almak için mağazamıza uğrayın; çayınız hazır, baklavanız taze.</p>
+   <div class="c-rows rv d3" id="crows">
+    <div><small>Adres</small><strong>Saray Cd. 70-72 D, Alemdağ<br>34794 Çekmeköy / İstanbul</strong></div>
+   </div>
+   <div class="c-btns rv d4">
+    <a class="btn btn-green" href="https://www.google.com/maps/search/?api=1&amp;query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y"><svg width="18" height="18" aria-hidden="true"><use href="#pin"/></svg>Yol tarifi al</a>
+    <a class="btn btn-dark" href="#lezzetler">Lezzetlerimiz</a>
+   </div>
+  </div>
+  <div class="c-photo rv"><picture><source srcset="img/fistikli.avif" type="image/avif"><img src="img/fistikli.webp" width="720" height="900" alt="Bakır tepside taze fıstıklı baklava" loading="lazy" decoding="async"></picture></div>
+ </div>
+</section>
 </main>
 
 <footer>
  <div class="wrap">
-  <div class="cols">
-   <div><a class="logo" href="#ust"><svg aria-hidden="true" style="width:46px;height:46px"><use href="#emb"/></svg><span><b>Gazi Efendi</b><small>Baklava · Alemdağ</small></span></a><p style="margin:16px 0 0;max-width:24em">Alemdağ'da her sabah taze, elde açılan yufkayla baklava.</p></div>
-   <div><h3>Menü</h3><a href="#lezzetler">Lezzetlerimiz</a><a href="#kat">Kırk kat</a><a href="#hikaye">Hikâyemiz</a><a href="#ozel-gunler">Özel günler</a></div>
-   <div><h3>İletişim</h3><p style="margin:0">Saray Cd. 70-72 D, Alemdağ<br>34794 Çekmeköy / İstanbul</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y">Haritada aç →</a></div>
+  <div class="f-grid">
+   <div><a class="logo" href="#ust"><svg aria-hidden="true"><use href="#emb"/></svg><span><b>Gazi Efendi</b><small>Baklava · Alemdağ</small></span></a><p style="max-width:26em">Çekmeköy Alemdağ'da her sabah taze, elde açılan yufka ve Antep fıstığıyla baklava.</p></div>
+   <div><h3>Keşfedin</h3><a href="#lezzetler">Lezzetlerimiz</a><a href="#ustalik">Ustalık</a><a href="#ozel-gunler">Özel Günler</a><a href="#hikaye">Hikâyemiz</a></div>
+   <div><h3>Adres</h3><p>Saray Cd. 70-72 D, Alemdağ<br>34794 Çekmeköy / İstanbul</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y" style="color:var(--gold);margin-top:8px">Yol tarifi al →</a></div>
   </div>
-  <div class="copy">© Alemdağ Gazi Efendi Baklava</div>
+  <div class="f-bot"><span>© Alemdağ Gazi Efendi Baklava</span><span>Alemdağ · Çekmeköy · İstanbul</span></div>
  </div>
 </footer>
 
+<a class="fab" id="fab" href="https://www.google.com/maps/search/?api=1&amp;query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y"><svg width="18" height="18" aria-hidden="true"><use href="#pin"/></svg>Yol tarifi</a>
+
 <script>
 {
- const cats=[
-  {n:'Fıstıklı baklava',d:'Klasiğimiz, bol Antep fıstıklı',i:'tepsi.webp'},
-  {n:'Şöbiyet',d:'Kaymaklı, fıstıklı üçgenler',i:'sobiyet.webp'},
-  {n:'Havuç dilimi',d:'Fıstık dolu, çıtır uçlu',i:'havuc.webp'},
-  {n:'Cevizli baklava',d:'Bol cevizli, ev usulü',i:'cevizli.webp'},
-  {n:'Fıstık sarma',d:'Kesitinde yeşil bir girdap',i:'sarma.webp'}
- ];
- document.getElementById('cats').innerHTML=cats.map(c=>`<a class="cat" href="#iletisim"><img src="${c.i}" alt="${c.n}" loading="lazy"><div><h3>${c.n}</h3><p>${c.d}</p></div></a>`).join('');
+ /* İşletme bilgileri: doldurulan alanlar iletişim bölümünde otomatik görünür. Boş bırakılanlar gösterilmez. */
+ const ISLETME={telefon:'',whatsapp:'',saatler:'',instagram:''};
 
- const reduce=matchMedia('(prefers-reduced-motion: reduce)');
- const slides=[...document.querySelectorAll('.slide')];
- const dotsBox=document.querySelector('.dots');
- dotsBox.innerHTML=slides.map((_,i)=>`<button type="button" aria-label="Slayt ${i+1}"><i></i></button>`).join('');
- const dots=[...dotsBox.children];
- let cur=0,timer=null;
- const show=i=>{cur=(i+slides.length)%slides.length;slides.forEach((s,k)=>s.classList.toggle('on',k===cur));dots.forEach((d,k)=>d.setAttribute('aria-current',k===cur))};
- const start=()=>{clearInterval(timer);if(!reduce.matches)timer=setInterval(()=>show(cur+1),6000)};
- dots.forEach((d,k)=>d.addEventListener('click',()=>{show(k);start()}));
- show(0);start();
+ const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 
- const sec=document.querySelector('.anat');
+ // iletişim satırları
+ const rows=$('#crows'),add=(l,h)=>{const d=document.createElement('div');d.innerHTML=`<small>${l}</small><strong>${h}</strong>`;rows.appendChild(d)};
+ if(ISLETME.telefon)add('Telefon',`<a href="tel:${ISLETME.telefon.replace(/\s/g,'')}">${ISLETME.telefon}</a>`);
+ if(ISLETME.whatsapp)add('WhatsApp',`<a href="https://wa.me/${ISLETME.whatsapp.replace(/\D/g,'')}">${ISLETME.whatsapp}</a>`);
+ if(ISLETME.saatler)add('Çalışma saatleri',ISLETME.saatler);
+ if(ISLETME.instagram)add('Instagram',`<a href="https://instagram.com/${ISLETME.instagram.replace('@','')}">@${ISLETME.instagram.replace('@','')}</a>`);
+
+ // navbar
+ const nav=$('#nav'),burger=$('.burger'),hero=$('.hero');
+ const setNav=()=>nav.classList.toggle('solid',scrollY>hero.offsetHeight-90||nav.classList.contains('open'));
+ burger.addEventListener('click',()=>{const o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Menüyü kapat':'Menüyü aç');setNav()});
+ $$('#drawer a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');burger.setAttribute('aria-expanded',false);setNav()}));
+
+ // reveal
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+ $$('.rv').forEach(el=>io.observe(el));
+
+ // ustalık adımları
+ const pics=$$('.craft-media picture'),cap=$('#cap');
+ const stepIO=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const i=+e.target.dataset.i;
+  $$('.step').forEach(s=>s.classList.toggle('on',+s.dataset.i===i));pics.forEach(p=>p.classList.toggle('on',+p.dataset.i===i));cap.textContent=`0${i+1} / 03`}),{rootMargin:'-45% 0px -45% 0px'});
+ $$('.step').forEach(s=>stepIO.observe(s));
+
+ // kırk kat: katman animasyonu veya kaydırmayla ilerleyen video
+ const sec=$('.anat'),stage=$('.stage');let video=null;
+ if(sec.dataset.video){video=document.createElement('video');Object.assign(video,{muted:true,playsInline:true,preload:'auto',poster:sec.dataset.poster||''});
+  video.setAttribute('aria-hidden','true');video.src=sec.dataset.video;stage.prepend(video);stage.classList.add('has-video')}
  const ease=t=>t<.5?2*t*t:1-((-2*t+2)**2)/2;
+
+ // mobil yol tarifi düğmesi
+ const fab=$('#fab'),contact=$('#iletisim');
+
+ // parallax
+ const px=$$('[data-px]'),wide=matchMedia('(min-width: 861px)');
+
  let ticking=false;
- const update=()=>{ticking=false;if(reduce.matches){sec.style.setProperty('--e',1);return}
-  const r=sec.getBoundingClientRect(),span=r.height-innerHeight;
-  const p=Math.min(1,Math.max(0,-r.top/(span||1)));
-  sec.style.setProperty('--e',ease(Math.min(1,p/.8)).toFixed(4))};
- const onScroll=()=>{if(!ticking){ticking=true;requestAnimationFrame(update)}};
+ const frame=()=>{ticking=false;setNav();
+  const vh=innerHeight;
+  if(reduce){sec.style.setProperty('--e',1)}else{
+   const r=sec.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/((r.height-vh)||1)));
+   sec.style.setProperty('--e',ease(Math.min(1,p/.8)).toFixed(4));
+   if(video&&video.duration)video.currentTime=p*video.duration;
+   if(wide.matches)px.forEach(img=>{const b=img.parentElement.parentElement.getBoundingClientRect();if(b.bottom<0||b.top>vh)return;
+    const c=(b.top+b.height/2-vh/2)/vh;img.style.transform=`translateY(${(-6-c*6).toFixed(2)}%)`});
+  }
+  const cr=contact.getBoundingClientRect();
+  fab.classList.toggle('show',scrollY>vh*.8&&!(cr.top<vh&&cr.bottom>0));
+ };
+ const onScroll=()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}};
  addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);
- update();
+ frame();
 }
 </script>
 </body>

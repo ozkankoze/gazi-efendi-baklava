@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gazi Efendi Baklava | Alemdağ, Çekmeköy Baklavacı</title>
-<meta name="description" content="Alemdağ Gazi Efendi Baklava: Çekmeköy Alemdağ'da her sabah taze, elde açılan yufka ve Antep fıstığıyla fıstıklı baklava, şöbiyet, havuç dilimi, cevizli baklava ve fıstık sarma. Saray Cd. 70-72 D.">
+<meta name="description" content="Alemdağ Gazi Efendi Baklava: Çekmeköy Alemdağ'da her sabah taze, elde açılan yufka ve Antep fıstığıyla fıstıklı baklava, şöbiyet, havuç dilimi, cevizli baklava ve fıstık sarma. Saray Cd. 70-72 D. Her gün 09:30–00:00. Tel: 0536 559 94 41">
 <link rel="canonical" href="https://gazi-efendi-baklava.vercel.app/">
 <meta name="theme-color" content="#18352B">
 <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://gazi-efendi-baklava.vercel.app/">
 <meta property="og:image" content="https://gazi-efendi-baklava.vercel.app/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='23' fill='%2318352B'/%3E%3Cpath d='M24 11l11 13-11 13-11-13z' fill='none' stroke='%23D0AD69' stroke-width='1.6'/%3E%3Cpath d='M24 17l6 7-6 7-6-7z' fill='%23D0AD69'/%3E%3C/svg%3E">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -29,7 +29,10 @@
  "alternateName":"Gazi Efendi Baklava",
  "description":"Çekmeköy Alemdağ'da her sabah taze, elde açılan yufka ve Antep fıstığıyla baklava yapan baklavacı.",
  "url":"https://gazi-efendi-baklava.vercel.app/",
- "image":"https://gazi-efendi-baklava.vercel.app/img/og.jpg",
+ "image":["https://gazi-efendi-baklava.vercel.app/img/og.jpg","https://gazi-efendi-baklava.vercel.app/img/magaza.webp"],
+ "logo":"https://gazi-efendi-baklava.vercel.app/img/logo.svg",
+ "telephone":"+90 536 559 94 41",
+ "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:30","closes":"23:59"}],
  "servesCuisine":["Baklava","Türk tatlıları"],
  "address":{"@type":"PostalAddress","streetAddress":"Saray Cd. 70-72 D, Alemdağ","addressLocality":"Çekmeköy","addressRegion":"İstanbul","postalCode":"34794","addressCountry":"TR"},
  "areaServed":[{"@type":"Place","name":"Alemdağ"},{"@type":"Place","name":"Çekmeköy"},{"@type":"Place","name":"İstanbul"}],
@@ -74,9 +77,9 @@ p{margin:0}
 .nav.solid{background:rgba(251,248,242,.94);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);box-shadow:0 1px 0 var(--line);color:var(--ink)}
 .nav.solid .wrap{height:70px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo svg{width:42px;height:42px;flex:none}
-.logo b{display:block;font-weight:800;font-size:19px;letter-spacing:-.02em;line-height:1.1}
-.logo small{display:block;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.75}
+.logo svg{width:40px;height:43px;flex:none}
+.logo b{display:block;font-weight:800;font-size:18px;letter-spacing:.01em;line-height:1.1}
+.logo small{display:block;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#3DBB4D}
 .menu{display:flex;align-items:center;gap:34px;font-size:14.5px;font-weight:600}
 .menu a{text-decoration:none;position:relative;padding:6px 0}
 .menu a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
@@ -251,9 +254,10 @@ p{margin:0}
 .c-rows strong{font-weight:600;font-size:17px}
 .c-rows a{text-decoration:none}.c-rows a:hover{color:var(--gold-ink)}
 .c-btns{display:flex;flex-wrap:wrap;gap:12px}
-.c-photo{border-radius:4px;overflow:hidden;min-height:420px;position:relative}
+.c-photo{border-radius:4px;overflow:hidden;aspect-ratio:4/3;align-self:center;position:relative}
 .c-photo picture,.c-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-@media(max-width:860px){.c-grid{grid-template-columns:1fr}.c-photo{min-height:300px;order:-1}.c-rows div{grid-template-columns:1fr;gap:4px}}
+.c-tag{position:absolute;left:16px;bottom:16px;z-index:1;background:rgba(251,248,242,.94);color:var(--ink);font-size:13px;font-weight:600;padding:8px 14px;border-radius:999px}
+@media(max-width:860px){.c-grid{grid-template-columns:1fr}.c-photo{order:-1}.c-rows div{grid-template-columns:1fr;gap:4px}}
 
 /* ——— alt bilgi ——— */
 footer{background:var(--green);color:#CFC6B4;padding:64px 0 34px;font-size:15px}
@@ -287,14 +291,14 @@ footer .logo{color:var(--cream);margin-bottom:18px}
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
- <symbol id="emb" viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#18352B"/><circle cx="24" cy="24" r="19.5" fill="none" stroke="#D0AD69" stroke-width=".8"/><path d="M24 10.5l11.5 13.5L24 37.5 12.5 24z" fill="none" stroke="#D0AD69" stroke-width="1.3"/><path d="M24 16.5l6.4 7.5-6.4 7.5-6.4-7.5z" fill="#D0AD69"/></symbol>
+ <symbol id="emb" viewBox="0 0 100 106"><g stroke="#1F6E2C" stroke-width="1.6" stroke-linejoin="round"><path d="M50 22 L94 62 L50 102 L6 62 Z" fill="#33A844"/><path d="M50 16 L94 56 L50 96 L6 56 Z" fill="#36AE47"/><path d="M50 10 L94 50 L50 90 L6 50 Z" fill="#39B44A"/><path d="M50 4 L94 44 L50 84 L6 44 Z" fill="#3DBB4D"/></g><text x="50" y="56" text-anchor="middle" transform="skewX(-12) translate(11 0)" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="-2" fill="#fff">GE</text></symbol>
  <symbol id="arr" viewBox="0 0 20 20"><path d="M4 10h12M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
  <symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
 </svg>
 
 <header class="nav" id="nav">
  <div class="wrap">
-  <a class="logo" href="#ust" aria-label="Gazi Efendi Baklava, ana sayfa"><svg aria-hidden="true"><use href="#emb"/></svg><span><b>Gazi Efendi</b><small>Baklava · Alemdağ</small></span></a>
+  <a class="logo" href="#ust" aria-label="Gazi Efendi Baklava, ana sayfa"><svg aria-hidden="true"><use href="#emb"/></svg><span><b>GAZİ EFENDİ</b><small>Baklava · Alemdağ</small></span></a>
   <nav class="menu" aria-label="Ana menü">
    <a href="#lezzetler">Lezzetlerimiz</a><a href="#ustalik">Ustalık</a><a href="#kirk-kat">Kırk Kat</a><a href="#ozel-gunler">Özel Günler</a><a href="#hikaye">Hikâyemiz</a>
   </nav>
@@ -302,7 +306,7 @@ footer .logo{color:var(--cream);margin-bottom:18px}
   <button class="burger" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="drawer"><i></i></button>
  </div>
  <div class="drawer" id="drawer">
-  <a href="#lezzetler">Lezzetlerimiz</a><a href="#ustalik">Ustalık</a><a href="#kirk-kat">Kırk Kat</a><a href="#ozel-gunler">Özel Günler</a><a href="#hikaye">Hikâyemiz</a><a href="#iletisim">İletişim</a>
+  <a href="#lezzetler">Lezzetlerimiz</a><a href="#ustalik">Ustalık</a><a href="#kirk-kat">Kırk Kat</a><a href="#ozel-gunler">Özel Günler</a><a href="#hikaye">Hikâyemiz</a><a href="#iletisim">İletişim</a><a href="tel:+905365599441">Telefon: 0536 559 94 41</a>
   <a class="btn btn-green" href="https://www.google.com/maps/search/?api=1&amp;query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y">Yol tarifi al</a>
  </div>
 </header>
@@ -330,7 +334,7 @@ footer .logo{color:var(--cream);margin-bottom:18px}
 
 <section class="trust" aria-label="Neden Gazi Efendi">
  <div class="wrap">
-  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><p><b>Her sabah taze</b><span>Günlük üretim</span></p></div>
+  <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><p><b>Her gün açığız</b><span>09:30 – 00:00</span></p></div>
   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 14h18M5 10h14M7 18h10"/></svg><p><b>Elde açılan yufka</b><span>Oklavayla, kat kat</span></p></div>
   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 3c4 2 6 6 6 10a6 6 0 0 1-12 0c0-4 2-8 6-10z"/><path d="M12 9v9"/></svg><p><b>Antep fıstığı</b><span>Özenle seçilmiş</span></p></div>
   <div><svg aria-hidden="true"><use href="#pin"/></svg><p><b>Alemdağ, Çekmeköy</b><span>Saray Caddesi'nde</span></p></div>
@@ -452,16 +456,16 @@ footer .logo{color:var(--cream);margin-bottom:18px}
   <div class="c-info">
    <span class="kick rv">Bizi Ziyaret Edin</span>
    <h2 class="h2 rv d1">Alemdağ'da, Saray Caddesi'nde.</h2>
-   <p class="lead rv d2">Çekmeköy Alemdağ'da baklava almak için mağazamıza uğrayın; çayınız hazır, baklavanız taze.</p>
+   <p class="lead rv d2">Çekmeköy Alemdağ'da baklava almak için mağazamıza uğrayın; her gün 09:30'dan gece yarısına kadar açığız. Günlük sıcak tatlı ve baklava sizi bekliyor.</p>
    <div class="c-rows rv d3" id="crows">
     <div><small>Adres</small><strong>Saray Cd. 70-72 D, Alemdağ<br>34794 Çekmeköy / İstanbul</strong></div>
    </div>
    <div class="c-btns rv d4">
     <a class="btn btn-green" href="https://www.google.com/maps/search/?api=1&amp;query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y"><svg width="18" height="18" aria-hidden="true"><use href="#pin"/></svg>Yol tarifi al</a>
-    <a class="btn btn-dark" href="#lezzetler">Lezzetlerimiz</a>
+    <a class="btn btn-dark" href="tel:+905365599441">Hemen arayın</a>
    </div>
   </div>
-  <div class="c-photo rv"><picture><source srcset="img/fistikli.avif" type="image/avif"><img src="img/fistikli.webp" width="720" height="900" alt="Bakır tepside taze fıstıklı baklava" loading="lazy" decoding="async"></picture></div>
+  <div class="c-photo rv"><picture><source srcset="img/magaza.avif" type="image/avif"><img src="img/magaza.webp" width="1269" height="952" alt="Alemdağ Saray Caddesi'ndeki Gazi Efendi Baklava mağazasının önü" loading="lazy" decoding="async" style="object-position:50% 40%"></picture><span class="c-tag">Mağazamız · Saray Cd. 70-72 D</span></div>
  </div>
 </section>
 </main>
@@ -469,9 +473,9 @@ footer .logo{color:var(--cream);margin-bottom:18px}
 <footer>
  <div class="wrap">
   <div class="f-grid">
-   <div><a class="logo" href="#ust"><svg aria-hidden="true"><use href="#emb"/></svg><span><b>Gazi Efendi</b><small>Baklava · Alemdağ</small></span></a><p style="max-width:26em">Çekmeköy Alemdağ'da her sabah taze, elde açılan yufka ve Antep fıstığıyla baklava.</p></div>
+   <div><a class="logo" href="#ust"><svg aria-hidden="true"><use href="#emb"/></svg><span><b>GAZİ EFENDİ</b><small>Baklava · Alemdağ</small></span></a><p style="max-width:26em">Çekmeköy Alemdağ'da günlük sıcak tatlı ve baklava. Her sabah taze, elde açılan yufka ve Antep fıstığıyla.</p></div>
    <div><h3>Keşfedin</h3><a href="#lezzetler">Lezzetlerimiz</a><a href="#ustalik">Ustalık</a><a href="#ozel-gunler">Özel Günler</a><a href="#hikaye">Hikâyemiz</a></div>
-   <div><h3>Adres</h3><p>Saray Cd. 70-72 D, Alemdağ<br>34794 Çekmeköy / İstanbul</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y" style="color:var(--gold);margin-top:8px">Yol tarifi al →</a></div>
+   <div><h3>Adres ve iletişim</h3><p>Saray Cd. 70-72 D, Alemdağ<br>34794 Çekmeköy / İstanbul</p><a href="tel:+905365599441">0536 559 94 41</a><p style="margin-top:4px">Her gün 09:30 – 00:00</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Alemda%C4%9F+Gazi+Efendi+Baklava+%C3%87ekmek%C3%B6y" style="color:var(--gold);margin-top:8px">Yol tarifi al →</a></div>
   </div>
   <div class="f-bot"><span>© Alemdağ Gazi Efendi Baklava</span><span>Alemdağ · Çekmeköy · İstanbul</span></div>
  </div>
@@ -482,7 +486,7 @@ footer .logo{color:var(--cream);margin-bottom:18px}
 <script>
 {
  /* İşletme bilgileri: doldurulan alanlar iletişim bölümünde otomatik görünür. Boş bırakılanlar gösterilmez. */
- const ISLETME={telefon:'',whatsapp:'',saatler:'',instagram:''};
+ const ISLETME={telefon:'0536 559 94 41',whatsapp:'',saatler:'Her gün 09:30 – 00:00',instagram:''};
 
  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 106" role="img" aria-label="Gazi Efendi Baklava logosu">
+  <g stroke="#1F6E2C" stroke-width="1.6" stroke-linejoin="round">
+    <path d="M50 22 L94 62 L50 102 L6 62 Z" fill="#33A844"/>
+    <path d="M50 16 L94 56 L50 96 L6 56 Z" fill="#36AE47"/>
+    <path d="M50 10 L94 50 L50 90 L6 50 Z" fill="#39B44A"/>
+    <path d="M50 4 L94 44 L50 84 L6 44 Z" fill="#3DBB4D"/>
+  </g>
+  <text x="50" y="56" text-anchor="middle" transform="skewX(-12) translate(11 0)" font-family="Manrope, Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="-2" fill="#fff">GE</text>
+</svg>

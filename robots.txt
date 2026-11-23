@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gazi-efendi-baklava.vercel.app/sitemap.xml
+Sitemap: https://www.gaziefendibaklava.com/sitemap.xml
